@@ -17,7 +17,7 @@ $(document).ready(function($) {
   });
 
 	// Scrollax
-  $.Scrollax();
+ // $.Scrollax();
 
 
 	// loader
@@ -60,15 +60,15 @@ $(document).ready(function($) {
 	};
 	carousel();
 
-	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-
-	};
-	fullHeight();
+//	var fullHeight = function() {
+//
+//		$('.js-fullheight').css('height', $(window).height());
+//		$(window).resize(function(){
+//			$('.js-fullheight').css('height', $(window).height());
+//		});
+//
+//	};
+//	fullHeight();
 
 	var burgerMenu = function() {
 
@@ -189,18 +189,18 @@ $(document).ready(function($) {
 	});
 	$('#appointment_time').timepicker();
 
-	var pageProgress = function() {
-		$(window).scroll(function() {
-	    var wintop = $(window).scrollTop(), docheight = $('.page').height(), winheight = $(window).height();
-	    // console.log(wintop);
-	    var totalScroll = (wintop/(docheight-winheight))*100;
+//	var pageProgress = function() {
+//		$(window).scroll(function() {
+//	    var wintop = $(window).scrollTop(), docheight = $('.page').height(), winheight = $(window).height();
+//	    // console.log(wintop);
+//	    var totalScroll = (wintop/(docheight-winheight))*100;
 	    // console.log("total scroll" + totalScroll);
-	    $(".KW_progressBar").css("width",totalScroll+"%");
-	  });
+//	    $(".KW_progressBar").css("width",totalScroll+"%");
+//	  });
 
-	};
-	pageProgress();
+//	};
+//	pageProgress();
 
 
-});
+ });
 
